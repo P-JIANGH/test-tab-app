@@ -10,11 +10,29 @@ import { MessagePage } from '../message/message';
 })
 export class TabsPage {
 
-  HomePageRoot = HomePage;
-  PopularPageRoot = PopularPage;
-  MessagePageRoot = MessagePage;
-  SelfPageRoot = SelfPage;
-
+  tabRoots = [
+    {
+      root: HomePage,
+      tabTitle: '主页',
+      tabIcon: 'home'
+    },
+    {
+      root: PopularPage,
+      tabTitle: '社区',
+      tabIcon: 'browsers'
+    },
+    {
+      root: MessagePage,
+      tabTitle: '消息',
+      tabIcon: 'chatbubbles'
+    },
+    {
+      root: SelfPage,
+      tabTitle: '个人',
+      tabIcon: 'person'
+    }
+  ];
+  
   constructor() {
 
   }

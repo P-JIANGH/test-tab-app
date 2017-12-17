@@ -3,15 +3,57 @@
     <ion-title>
       个人
     </ion-title>
+    <ion-buttons end>
+      <button ion-button icon-only (click)="openModal()">
+        <ion-icon name="more"></ion-icon>
+      </button>
+    </ion-buttons>
   </ion-navbar>
 </ion-header>
 
 <ion-content>
+
   <ion-list>
-    <ion-list-header>Follow us on Twitter</ion-list-header>
     <ion-item>
-      <ion-icon name="ionic" item-start></ion-icon>
-      @ionicframework
-    </ion-item>
+        <button ion-item [navPush]="">
+          <ion-avatar item-left>
+              <img [src]="this._userImgPath">
+          </ion-avatar>
+          <h2>gooohai!</h2>
+          <p>用户名：gooohai!</p>
+        </button>
+      </ion-item>
+  </ion-list>
+
+  <ion-list>
+    <button ion-item>
+      <ion-icon name="at" item-start></ion-icon>
+      我参与的
+      <ion-badge color="danger" item-end>{{this._condPoprCount}}</ion-badge>
+    </button>
+    <button ion-item>
+      <ion-icon name="heart" item-start></ion-icon>
+      我喜欢的
+      <ion-badge color="danger" item-end>{{this._likedPoprCount}}</ion-badge>
+    </button>
+  </ion-list>
+
+  <ion-list>
+    <button ion-item>
+      <ion-icon name="settings" item-start></ion-icon>
+      设置
+    </button>
+    <button ion-item>
+      <ion-icon name="share-alt" item-start></ion-icon>
+      分享
+    </button>
+    <button ion-item>
+      <ion-icon name="send" item-start></ion-icon>
+      反馈
+    </button>
+    <button ion-item>
+      <ion-icon name="information-circle" item-start></ion-icon>
+      关于
+    </button>
   </ion-list>
 </ion-content>
