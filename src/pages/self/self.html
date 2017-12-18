@@ -11,7 +11,7 @@
   </ion-navbar>
 </ion-header>
 
-<ion-content>
+<ion-content padding>
 
   <ion-list>
     <ion-item>
@@ -26,12 +26,12 @@
   </ion-list>
 
   <ion-list>
-    <button ion-item>
+    <button ion-item [navPush]="">
       <ion-icon name="at" item-start></ion-icon>
       我参与的
       <ion-badge color="danger" item-end>{{this._condPoprCount}}</ion-badge>
     </button>
-    <button ion-item>
+    <button ion-item [navPush]="">
       <ion-icon name="heart" item-start></ion-icon>
       我喜欢的
       <ion-badge color="danger" item-end>{{this._likedPoprCount}}</ion-badge>
@@ -39,19 +39,19 @@
   </ion-list>
 
   <ion-list>
-    <button ion-item>
+    <button ion-item [navPush]="settingPage">
       <ion-icon name="settings" item-start></ion-icon>
       设置
     </button>
-    <button ion-item>
+    <button ion-item [navPush]="">
       <ion-icon name="share-alt" item-start></ion-icon>
       分享
     </button>
-    <button ion-item>
+    <button ion-item [navPush]="">
       <ion-icon name="send" item-start></ion-icon>
       反馈
     </button>
-    <button ion-item>
+    <button ion-item [navPush]="">
       <ion-icon name="information-circle" item-start></ion-icon>
       关于
     </button>

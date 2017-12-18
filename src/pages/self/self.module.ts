@@ -4,7 +4,7 @@ import { SelfPage } from './self';
 
 @NgModule({
   declarations: [
-    SelfPage,
+    SelfPage
   ],
   imports: [
     IonicPageModule.forChild(SelfPage),

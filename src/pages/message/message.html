@@ -8,5 +8,27 @@
 
 
 <ion-content padding>
+  <ion-list>
+    <ion-list-header>今天</ion-list-header>
+    <button ion-item *ngFor="let item of todayMessageList">
+      <ion-avatar item-start>
+        <img [src]="item.userImgPath">
+      </ion-avatar>
+      <h2>{{item.user}}</h2>
+      <p>{{item.messageContext}}</p>
+      <ion-note item-end>{{item.messageTimestamp}}</ion-note>
+    </button>
+  </ion-list>
 
+  <ion-list>
+      <ion-list-header>以前</ion-list-header>
+      <button ion-item *ngFor="let item of lastMessageList">
+        <ion-avatar item-start>
+          <img [src]="item.userImgPath">
+        </ion-avatar>
+        <h2>{{item.user}}}</h2>
+        <p>{{item.messageContext}}</p>
+        <ion-note item-end>{{item.messageTimestamp}}</ion-note>
+      </button>
+    </ion-list>
 </ion-content>
