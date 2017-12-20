@@ -8,7 +8,7 @@ import { PopularPage } from '../pages/popular/popular';
 import { SelfPage } from '../pages/self/self';
 import { HomePage } from '../pages/home/home';
 import { TabsPage } from '../pages/tabs/tabs';
-import { MessagePage } from '../pages/message/message';
+import { MessageListPage } from '../pages/messageList/messageList';
 import { LoginPage } from '../pages/login/login';
 
 import { StatusBar } from '@ionic-native/status-bar';
@@ -22,7 +22,7 @@ import { SplashScreen } from '@ionic-native/splash-screen';
     SelfPage,
     SettingPage,
     HomePage,
-    MessagePage,
+    MessageListPage,
     TabsPage
   ],
   imports: [
@@ -37,7 +37,7 @@ import { SplashScreen } from '@ionic-native/splash-screen';
     SelfPage,
     SettingPage,
     HomePage,
-    MessagePage,
+    MessageListPage,
     TabsPage
   ],
   providers: [
