@@ -4,15 +4,22 @@
   </ion-navbar>
 </ion-header>
 <ion-content padding>
-  <ion-slides>
-    <ion-slide>
-      <h1>Slide 1</h1>
+  <ion-slides [autoplay]="1500" [pager]="true" [speed]="240"
+    [loop]="true" style="height: 30%">
+    <ion-slide style="background-color: #488aff">
+      <h1>primary</h1>
     </ion-slide>
-    <ion-slide>
-      <h1>Slide 2</h1>
+    <ion-slide style="background-color: #32db64">
+      <h1>secondary</h1>
     </ion-slide>
-    <ion-slide>
-      <h1>Slide 3</h1>
+    <ion-slide style="background-color: #f53d3d">
+      <h1>danger</h1>
+    </ion-slide>
+    <ion-slide style="background-color: tomato">
+      <h1>tomato</h1>
+    </ion-slide>
+    <ion-slide style="background-color: turquoise">
+      <h1>turquoise</h1>
     </ion-slide>
   </ion-slides>
 

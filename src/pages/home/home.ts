@@ -9,6 +9,7 @@ import { IonicPage, NavController, Slides } from 'ionic-angular';
 export class HomePage {
 
   @ViewChild(Slides) slides: Slides;
+  
   constructor(public navCtrl: NavController) {
     
   }
